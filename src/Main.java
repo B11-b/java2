@@ -93,14 +93,39 @@ public class Main {
              }
              System.out.println();
          }
-     }
+     } 
      public static void Thursday (){
+         int array[]=new int[]{1,2,3,4};
+         add5(array);
+         for (int i=0; i < array.length ;i++){
+             System.out.println("Numbers = " +array[i]);
+         }
+     }
+     public static void add5(int array[]){
+
+         for (int i=0; i < array.length ;i++){
+              array[i]+=5;
+         }
      }
      public static void Friday(){
-
+      fr(5);
+      fr(2.0f);
+      fr("y");
+     }
+     public static void fr(int N){
+         for (int i=1; i <N ;i++){
+         System.out.println("OOP");
+         }
+     }
+     public static void fr(Float x){
+       float y=x*3;
+         System.out.println(+y);
+     }
+     public static void fr(String F){
+         System.out.println("Hello "   +F);
      }
 
-    }
+}
 
 
 
